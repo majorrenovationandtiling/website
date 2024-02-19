@@ -208,6 +208,11 @@ body{
     display:inline-block;
 }
 
+.footer-icons a{
+    color:#000;
+    text-decoration:none;
+}
+
 .footer-icon svg{
     padding:1rem;
     height:2rem;
