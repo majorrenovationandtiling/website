@@ -446,4 +446,10 @@ body{
         font-size:1.4rem;
         margin-bottom:1rem; 
     }
+
+    .footer-icon svg{
+        padding:0.8rem;
+        height:1.5rem;
+        width:1.5rem;
+    }
 }
