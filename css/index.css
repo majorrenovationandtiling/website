@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Gudea');
+@import url('https://fonts.googleapis.com/css?family=Martel');
+*{
+    font-family:'Gudea';
+    padding:0;
+    margin:0;
+}
+
+body{
+    background:#F0F0F0;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    background: #B0B0B0;
+    padding-left:2.5rem;
+    padding-right:2.5rem;
+}
+
+.nav-image{
+    width:20%;
+    text-align:center;
+}
+
+.nav-logo{
+    width:50%;
+    padding:0.6rem;
+}
+
+.list-items{
+    display:inline-block;
+    padding-left:2rem;
+    padding-right:2rem;
+}
+
+.nav-link-list{
+    margin:auto;
+}
+
+.list-items a{
+    text-decoration:none;
+    color:#000;
+    font-weight:bold;
+}
+
+.nav-links{
+    width:50%;
+    display:flex;
+    align-self :center;
+    text-align:center;
+}
+
+.nav-quote{
+    display:flex;
+    width:25%;
+    text-align:center;
+}
+
+.nav-quote a{
+    margin:auto;
+    width:100%;
+    height:50%;
+    align-self:center;
+}
+
+.quote-button{
+    height:100%;
+    text-wrap:nowrap;
+    margin:auto;
+    min-width:40%;
+    font-weight:bold;
+    font-size:1.1rem;
+    border:none;
+    border-radius:0.4rem;
+    background-color:#dca43f;
+    box-shadow: 2px 2px 2px grey;
+}
+
+
+.index_video{
+    width:100%;
+    z-index:-3;
+}
+
+.welcome-message{
+    width:100%;
+    margin-top:-100;
+    z-index:1;
+    position:absolute;
+    top:15vw;
+    text-align:center;
+}
+
+.welcome-message h2{
+    font-size:4rem;
+    line-height:4rem;
+    font-family: 'Cormorant Garamond';
+    font-weight:bold;
+    color:#fff;
+    text-shadow:3px 3px 3px #000;
+}
+
+.welcome-message h3{
+    font-weight:bold;
+    font-size:2rem;
+    color:#fff;
+}
+
+.slogan{
+    color:#dca43f;
+    font-weight:bold;
+    font-size:2rem;
+}
+
+.welcome-message button{
+    margin-top:2vh;
+    background: #dca43f;
+    min-width:10%;
+    height:5vh;
+    border:1px solid #fff;
+    font-weight:bold;
+    font-size:1.3rem;
+    border-radius:3px;
+}
+
+h1{
+    text-align:center;
+    font-family: 'Cormorant Garamond';
+    font-size:3.5rem;
+}
+
+.service-box{
+    display:grid;
+    grid-template-columns: auto auto  auto;
+    padding-left:20rem;
+    padding-right:20rem;
+}
+
+.service{
+    text-align:center;
+    margin:2rem;
+    background:#fff;
+    /* padding: 10px; */
+    box-shadow: 5px 10px 8px #888888;
+    cursor:pointer;
+    /* border-radius:10px; */
+}
+
+.service:hover{
+    background: #dca43f;
+    color:#fff;
+    /* animation: animateOut 1s; */
+}
+
+@keyframes animateOut{
+    from{
+        padding-bottom:0;
+    }
+    to{
+        padding-bottom:5px;
+    }
+}
+
+
+.service:hover .service-btn{
+    color:#dca43f;
+    background:#fff;
+}
+
+.services-image{
+    width:100%;
+    /* max-height:50vh; */
+}
+
+.services-image img{
+    width:100%;
+    height:20vh;
+    /* padding-top:1.2rem; */
+}
+
+.service-text{
+    padding-bottom:1.2rem;
+    width:85%;
+    margin:auto;
+    font-family:'Martel';
+    font-size:1rem;
+}
+
+.service h4{
+    font-size:1.3rem;
+    padding:10px;
+}
+
+.section-heading{
+    margin-top:2rem;
+}
+
+.section-heading hr{
+    background-color:#dca43f;
+    border:#B0B0B0;
+    font-weight:900;
+    width:7%;
+    height:1vh;
+    margin:auto;
+}
+
+.service-btn{
+    background-color:#dca43f;
+    height:4vh;
+    width:40%;
+    margin-bottom:1.8rem;
+    font-weight:bold;
+    border:none;
+    font-size:1rem;
+    box-shadow: 2px 2px 2px grey;
+}
+
+/* footer styling */
+.footer{
+    display:flex;
+    justify-content: space-between;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    padding-left:3rem;
+    padding-right:3rem;
+    background:#dca43f;
+}
+
+.footer h5{
+    font-family: 'Cormorant Garamond';
+    font-size:2.5rem;
+    font-weight:bold;
+}
+
+.footer h6{
+    font-size:1.2rem;
+}
+
+.footer-icons{
+    align-self:center;
+}
+
+.footer-icon{
+    display:inline-block;
+}
+
+.footer-icon svg{
+    padding:1rem;
+    height:2rem;
+    width:2rem;
+}
+
+.footer-icon:hover svg{
+    color:#fff;
+}
+
+.show-navbar{
+    height:100vh;
+    z-index: 1;
+    position:absolute;
+}
+
+.show-welcome{
+    z-index:-1;
+    display:none;
+}
+
+.show-nav_quote{
+    bottom:5vw;
+    align-self:flex-end;
+    margin-bottom:20vw;
+    width:100%;
+    text-align:center;
+    position:absolute;
+}
+
+.nav-icon{
+    display:none;
+}
+
+/*Phone View*/
+@media screen and (max-width:768px){
+
+    .navbar{
+        padding:0;
+        
+    }
+
+    /* .welcome-message{
+       
+    } */
+
+    .nav-links{
+        display:none;    
+        position:absolute;
+        /* top:15vh; */
+        margin:auto;
+        width:100%;
+    }
+
+    .list-items{
+        display:block;
+        padding:2rem;
+    }
+
+    .nav-image{
+        width:60%;
+        text-align:left;
+    }
+
+    .nav-logo{
+        width:70%;
+        padding:0.4rem
+    }
+
+    .nav-quote{
+        display:none;
+    }
+
+    .index_video{
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .service-box{
+        grid-template-columns: auto;
+        padding-left:0.2rem;
+        padding-right: 0.2rem;
+    }
+
+    .welcome-message{
+        top:25vw;
+        width:100%;
+        /* margin-left:10%; */
+        margin-right:auto;
+    }
+
+    .welcome-message h2{
+        font-size:3.5rem;
+        text-align:center;
+    }
+
+    .nav-quote button{
+        height:10vw;
+    }
+
+    .nav-icon{
+        display:flex;
+    }
+
+    .nav-icon svg{
+        /* align-self:center; */
+        padding:0.4rem;
+        width:2.5rem;
+        height:2.5rem;
+    }
+
+    .welcome-message button{
+        width:50%;
+        min-height:5vh;
+        height:8vh;
+        font-size:1.5rem;
+        font-weight:bold;
+    }
+
+    .footer{
+        flex-direction: column;
+        justify-content: none;
+    }
+
+    .footer-text{
+        width:100%;
+        text-align:center;
+    }
+
+    .welcome-message h3{
+        font-weight:bold;
+        font-size:1.5rem;
+        color:#fff;
+    }
+
+    .slogan{
+        color:#dca43f;
+        font-weight:bold;
+        font-size:1.5rem;
+    }
+
+}
