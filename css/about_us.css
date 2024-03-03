@@ -192,19 +192,19 @@ body{
 }
 
 .gallery-ul{
-    list-style-image:url("/images/house-gear.svg");
+    list-style-image:url("../images/house-gear.svg");
 }
 
 .contact-us-section li:nth-child(1){
-    list-style-image:url("/images/geo-alt.svg");
+    list-style-image:url("../images/geo-alt.svg");
 }
 
 .contact-us-section li:nth-child(2){
-    list-style-image:url("/images/telephone.svg")
+    list-style-image:url("../images/telephone.svg")
 }
 
 .contact-us-section li:nth-child(3){
-    list-style-image:url("/images/envelope.svg")
+    list-style-image:url("../images/envelope.svg")
 }
 
 .copyright{
