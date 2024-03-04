@@ -13,7 +13,7 @@
     <script type="text/javascript">
         (function () {
             emailjs.init({
-                publicKey: "ACgwlAOiMJAMKN33U",
+                publicKey: "NUThJpfwDxP6CZBo3",
             });
         })();
     </script>
@@ -130,14 +130,14 @@
                             Make your dream a reality.
                         </h3>
                         <form action="" onsubmit="sendEmailFunc()">
-                            <input type="text" class="form-control" placeholder="Enter name" id="name">
-                            <input type="text" class="form-control" placeholder="Enter email" id="email">
-                            <input type="text" class="form-control" placeholder="Phone Number" id="phone_number">
-                            <input type="text" class="form-control" placeholder="Enter City" id="city">
-                            <input type="text" class="form-control" placeholder="Quote for?" id="quote_reason">
+                            <input type="text" class="form-control" placeholder="Enter name" id="name" required>
+                            <input type="text" class="form-control" placeholder="Enter email" id="email" required>
+                            <input type="text" class="form-control" placeholder="Phone Number" id="phone_number" required>
+                            <input type="text" class="form-control" placeholder="Enter City" id="city" required>
+                            <input type="text" class="form-control" placeholder="Quote for?" id="quote_reason" required>
                             <input type="text" class="form-control" placeholder="Best time to contact"
-                                id="best_contact">
-                            <button class="quote-submit" type="submit">
+                                id="best_contact" required>
+                            <button class="quote-submit">
                                 Request Quote
                             </button>
                         </form>
@@ -177,6 +177,11 @@
                     <li>
                         <a href="tel:+1(437) 771-8168">
                             +1(437)771-8168
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+1(519) 518-7391">
+                            +1(519)518-7391
                         </a>
                     </li>
                     <li>

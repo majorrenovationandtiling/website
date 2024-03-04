@@ -200,6 +200,7 @@ h1{
 
 .section-heading{
     padding-top:2rem;
+    padding-bottom:2rem;
 }
 
 .section-heading h1{
@@ -288,6 +289,10 @@ h1{
 }
 
 .contact-us-section li:nth-child(3){
+    list-style-image:url("../images/telephone.svg")
+}
+
+.contact-us-section li:nth-child(4){
     list-style-image:url("../images/envelope.svg")
 }
 
@@ -366,7 +371,6 @@ h1{
 }
 
 .reviews{
-    /* padding-left:10%; */
     padding-bottom:3vh;
 }
 
@@ -378,12 +382,9 @@ h1{
 }
 
 .review{
-    padding:2rem;
+    padding:1rem;
     border-radius:0.5rem;
-    /* box-shadow: 5px 10px 8px #888888; */
-    margin:1rem;
     background:#f0f0f0;
-    height:relative
 }
 
 .left-stars svg{
@@ -398,16 +399,18 @@ h1{
 
 .right-date{
     font-weight:bold;
+    padding-right:10%;
 }
 
 .review-button{
     width:100%;
-    text-align:center;
+    text-align:left;
+    margin-top:1rem;
 }
 
-.review-button a button{
+.review-button button{
     background:#dca43f;
-    width:15%;
+    width:30%;
     height:5vh;
     border-radius:5px;
     box-shadow: 3px 8px 5px #888888;
@@ -416,9 +419,185 @@ h1{
     font-weight:bold;
 }
 
+/* slider */
+.slider{
+    width: 1300px;
+    max-width: 100vw;
+    min-height: 20vh;
+    max-height: 25vh;
+    border-radius:10px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+
+.review{
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #000;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+
+.leave-review{
+    display:flex;
+    width:70%;
+    margin:auto;
+    padding-top:3rem;
+}
+
+.review-image{
+    width:50%;
+    text-align:right;
+}
+
+.review-image img{
+    width:100%;
+    border-radius:10px;
+}
+
+.form-label{
+    display:block;
+    font-size:1.3rem;
+    font-weight:bold;
+    padding-bottom:5px;
+}
+
+.form-control{
+    width:95%;
+    height:2.5rem;
+    border-radius:2px;
+    border:0.5px solid #000;
+    text-indent:1rem;
+}
+
+.mt-3{
+    margin-top:0.6rem;
+}
+
+.form-control-textarea{
+    height:5rem;
+    width:95%;
+    border-radius:2px;
+    border:0.5px solid #000;
+}
+
+
+.review-form{
+    width:50%;
+    padding-left:2rem;
+}
+
+.review-form h2{
+    color:#dca43f;
+    font-size:2.2rem;
+}
+
+.stars svg{
+    width:20px;
+    height:20px;
+    fill:#fff;
+    border:#000;
+    stroke: #000;
+}
+
+/* .stars svg:hover{
+    fill:#dca43f;
+} */
+
+/* svg:hover ~ svg {
+    fill:#dca43f;
+} */
 /*Phone View*/
 @media screen and (max-width:768px){
 
+    .slider{
+        width:80%;
+        min-height:40vh;
+        max-height:50vh;
+    }
+
+    .review-text{
+        width:70%;
+    }
+
+    .review-header{
+        display:flex;
+        margin-bottom:0.5vh;
+    }
+
+    .review-image{
+        width:0;
+        display:none;
+    }
+
+    .review-form{
+        width:100%;
+        padding-left:0;
+    }
+
+    .leave-review{
+        width:80%;
+    }
+
+    .review-button button{
+        width:50%
+    }
+
+    .right-date{
+        /* padding-left:3rem; */
+        padding-right:7rem;
+    }
     .footer .section{
         margin-top:1rem;
     }
