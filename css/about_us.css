@@ -204,8 +204,13 @@ body{
 }
 
 .contact-us-section li:nth-child(3){
+    list-style-image:url("../images/telephone.svg")
+}
+
+.contact-us-section li:nth-child(4){
     list-style-image:url("../images/envelope.svg")
 }
+
 
 .copyright{
     align-self:center;
